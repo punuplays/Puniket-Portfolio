@@ -1,0 +1,186 @@
+/* =====================================
+   PUNIKET.DEV — CINEMATIC ANIMATIONS
+===================================== */
+
+/* PAGE LOADER */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: grid;
+    place-items: center;
+
+    background: #0B0912;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-content h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+}
+
+.loader-content h1 span {
+    color: #A78BFA;
+}
+
+.loader-line {
+    width: 180px;
+    height: 3px;
+
+    margin-top: 20px;
+
+    background: rgba(167, 139, 250, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loader-line::after {
+    content: "";
+    display: block;
+
+    width: 40%;
+    height: 100%;
+
+    background: #A78BFA;
+    box-shadow: 0 0 15px #A78BFA;
+
+    animation: loaderProgress 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderProgress {
+    from {
+        transform: translateX(-110%);
+    }
+
+    to {
+        transform: translateX(280%);
+    }
+}
+
+/* HERO ENTRANCE */
+
+.hero-tag {
+    animation: fadeUp 0.8s ease both;
+    animation-delay: 0.2s;
+}
+
+.hero h1 {
+    animation: fadeUp 0.9s ease both;
+    animation-delay: 0.35s;
+}
+
+.hero-description {
+    animation: fadeUp 0.9s ease both;
+    animation-delay: 0.5s;
+}
+
+.hero-buttons {
+    animation: fadeUp 0.9s ease both;
+    animation-delay: 0.65s;
+}
+
+.hero-visual {
+    animation: fadeIn 1.3s ease both;
+    animation-delay: 0.5s;
+}
+
+/* COMMON ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* FLOATING ORB */
+
+.visual-orb {
+    animation: floatingOrb 6s ease-in-out infinite;
+}
+
+@keyframes floatingOrb {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-18px) scale(1.04);
+    }
+}
+
+/* GRADIENT TEXT */
+
+.hero h1 span {
+    background-size: 200% auto;
+    animation: gradientFlow 5s linear infinite;
+}
+
+@keyframes gradientFlow {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* BUTTON INTERACTIONS */
+
+.primary-button,
+.secondary-button,
+.nav-button {
+    will-change: transform;
+}
+
+/* NAVBAR ENTRANCE */
+
+#header {
+    animation: navReveal 0.8s ease both;
+}
+
+@keyframes navReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}

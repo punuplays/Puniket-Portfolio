@@ -1,0 +1,498 @@
+/* =====================================
+   PUNIKET.DEV — RESPONSIVE DESIGN
+===================================== */
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    :root {
+        --section-padding: 90px;
+    }
+
+    .hero {
+        gap: 20px;
+    }
+
+    .hero-visual {
+        width: 300px;
+        height: 300px;
+    }
+
+    .visual-orb {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 65px);
+    }
+
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 75px;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 5%;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        padding: 30px 20px;
+
+        background: rgba(21, 17, 31, 0.97);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+
+        transition: var(--transition);
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .menu-toggle span {
+        width: 24px;
+        height: 2px;
+        background: var(--text-primary);
+        border-radius: 5px;
+    }
+
+    /* CENTERED HERO */
+
+    .hero {
+        width: 90%;
+        min-height: 100svh;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding-top: 115px;
+        padding-bottom: 100px;
+
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 550px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-tag {
+        margin-bottom: 25px;
+        font-size: 9px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 9vw, 55px);
+        letter-spacing: -2px;
+        line-height: 1.15;
+    }
+
+    .hero-description {
+        max-width: 420px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        width: 100%;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        padding: 14px 17px;
+        font-size: 12px;
+    }
+
+    .hero-visual {
+        width: 230px;
+        height: 230px;
+    }
+
+    .visual-orb {
+        width: 165px;
+        height: 165px;
+    }
+
+    .hero-footer {
+        bottom: 22px;
+        font-size: 9px;
+    }
+
+}
+
+/* SMALL MOBILE DEVICES */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .hero-visual {
+        width: 190px;
+        height: 190px;
+    }
+
+    .visual-orb {
+        width: 140px;
+        height: 140px;
+    }
+
+}
+/* ABOUT MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 85px 0;
+    }
+
+    .about-heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-heading h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-intro {
+        font-size: 19px;
+    }
+
+    .about-description {
+        font-size: 13px;
+    }
+
+    .about-card {
+        text-align: left;
+        padding: 22px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .skills-section {
+        padding: 85px 0;
+    }
+
+    .skills-heading {
+        margin-bottom: 40px;
+    }
+
+    .skills-heading h2 {
+        font-size: 37px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .skill-card {
+        padding: 18px;
+        min-height: 190px;
+    }
+
+    .skill-card h3 {
+        font-size: 16px;
+    }
+
+    .skill-card p {
+        font-size: 11px;
+    }
+
+    .skill-level {
+        font-size: 9px;
+    }
+
+    .skills-footer {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        min-height: auto;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .projects-section {
+        padding: 85px 0;
+    }
+
+    .projects-heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .projects-heading h2 {
+        font-size: 40px;
+    }
+
+    .projects-heading > p {
+        font-size: 13px;
+    }
+
+    .project-featured {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project-preview {
+        min-height: 300px;
+    }
+
+    .recipe-visual {
+        min-height: 240px;
+    }
+
+    .recipe-text h3 {
+        font-size: 43px;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .project-tech,
+    .project-actions {
+        justify-content: center;
+    }
+
+    .projects-coming {
+        margin-top: 65px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .project-preview {
+        min-height: 250px;
+    }
+
+    .recipe-text h3 {
+        font-size: 37px;
+    }
+
+    .project-info h3 {
+        font-size: 30px;
+    }
+
+}
+/* RECIPEHUB PREVIEW - RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .recipe-site-preview {
+        min-height: auto;
+    }
+
+    .recipe-site-header {
+        flex-wrap: wrap;
+        padding: 12px;
+    }
+
+    .recipe-site-header > span:nth-child(2) {
+        display: none;
+    }
+
+    .recipe-site-hero {
+        grid-template-columns: 1fr;
+        padding: 22px 15px;
+        gap: 20px;
+    }
+
+    .recipe-site-content h2 {
+        font-size: 25px;
+    }
+
+    .recipe-site-food {
+        min-height: 150px;
+        font-size: 65px;
+    }
+
+    .recipe-site-categories {
+        padding: 0 15px 18px;
+    }
+
+    .recipe-site-categories > div {
+        gap: 7px;
+    }
+
+    .recipe-site-categories > div span {
+        font-size: 19px;
+        padding: 10px 3px;
+    }
+
+    .preview-stats {
+        gap: 25px;
+    }
+
+}
+/* CONTACT & FOOTER RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .contact-section {
+        padding: 85px 6%;
+    }
+
+    .contact-container h2 {
+        font-size: 38px;
+    }
+
+    .contact-container p {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        padding: 14px 25px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 6%;
+        gap: 15px;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .github-button {
+        margin-left: 0;
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .whatsapp-button {
+        margin-left: 0;
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+}
+
+/* =================================
+   CINEMATIC SCROLL REVEAL
+================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    filter: blur(6px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 0.9s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .resume-button {
+        margin-left: 0;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}

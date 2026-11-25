@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Puniket Gawade | Developer Resume</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #0B0912;
+            color: #F8FAFC;
+            padding: 35px 15px;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            padding: 55px;
+            background: #15111F;
+            border: 1px solid rgba(167,139,250,0.2);
+            border-radius: 16px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #A78BFA;
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 36px;
+            letter-spacing: -1px;
+        }
+
+        .role {
+            color: #A78BFA;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 12px;
+            line-height: 2;
+            color: #C4B5FD;
+        }
+
+        a {
+            color: #C4B5FD;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 15px;
+            color: #A78BFA;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+
+        p, li {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #D1CADB;
+        }
+
+        .education-item,
+        .project-item {
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .muted {
+            color: #A69CAF;
+            font-size: 12px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .skills span {
+            background: #241D32;
+            border: 1px solid rgba(167,139,250,0.25);
+            color: #D8CCFF;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .print-button {
+            display: block;
+            margin: 25px auto;
+            padding: 13px 25px;
+            background: #A78BFA;
+            color: #0B0912;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 25px 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .contact {
+                text-align: left;
+            }
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                background: white;
+                color: #17141d;
+                padding: 0;
+            }
+
+            .resume {
+                max-width: none;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                background: white;
+                color: #17141d;
+            }
+
+            p, li, .muted {
+                color: #444;
+            }
+
+            h3 {
+                color: #17141d;
+            }
+
+            .contact, a {
+                color: #5B3AA5;
+            }
+
+            .skills span {
+                background: #f1edfa;
+                color: #39265f;
+                border-color: #ddd1f5;
+            }
+
+            .print-button {
+                display: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="resume">
+
+        <header class="top">
+            <div>
+                <h1>Puniket Gawade</h1>
+                <p class="role">Aspiring Frontend Developer</p>
+            </div>
+
+            <div class="contact">
+                <p>punuplays@gmail.com</p>
+                <p>WhatsApp: +91 8265043015</p>
+                <p>
+                    <a href="https://github.com/punuplays">
+                        github.com/punuplays
+                    </a>
+                </p>
+                <p>Sawantwadi, Maharashtra, India</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                An aspiring Frontend Developer with hands-on experience
+                building responsive web applications using HTML, CSS,
+                JavaScript and Firebase. Passionate about learning new
+                technologies and creating user-friendly digital experiences.
+                Currently pursuing BCA and seeking an opportunity to grow
+                through a frontend development internship.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+                <span>Responsive Design</span>
+                <span>Git & GitHub</span>
+                <span>React (Learning)</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <h3>RecipeHub — Recipe Discovery Web Application</h3>
+                <p class="muted">
+                    HTML · CSS · JavaScript · Firebase
+                </p>
+                <ul>
+                    <li>
+                        Developed a recipe discovery website with a
+                        responsive user interface.
+                    </li>
+                    <li>
+                        Implemented user authentication using Firebase.
+                    </li>
+                    <li>
+                        Built recipe browsing, categories and
+                        favourite recipe features.
+                    </li>
+                    <li>
+                        Live Demo:
+                        <a href="https://punuplays.github.io/Recipe_Hub/">
+                            RecipeHub
+                        </a>
+                    </li>
+                    <li>
+                        Source Code:
+                        <a href="https://github.com/punuplays/Recipe_Hub">
+                            GitHub Repository
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Yashwantrao Chavan Maharashtra Open University</p>
+                <p class="muted">
+                    Second Year · Expected Graduation: 2028–2029
+                </p>
+            </div>
+
+            <div class="education-item">
+                <h3>Higher Secondary Certificate (12th Commerce)</h3>
+                <p class="muted">2024 · 74%</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                Seeking a frontend development internship where I can
+                apply my current skills, learn from experienced developers
+                and contribute to real-world web development projects.
+            </p>
+        </section>
+
+    </main>
+
+    <button class="print-button" onclick="window.print()">
+        Download Resume as PDF
+    </button>
+
+</body>
+</html>
